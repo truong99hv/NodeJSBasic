@@ -3,8 +3,9 @@ import homeController from "../controller/homeController";
 let router = express.Router();
 
 const initWebRoute = (app) => {
-  router.get("/", homeController.getHomepage);
+  // app.METHOD(PATH, HANDLER);
 
+  router.get("/", homeController.getHomepage);
   router.get("/about", (req, res) => {
     res.send("new");
   });
